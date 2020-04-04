@@ -1,8 +1,10 @@
-# flashloan-nft
+# Flashloan NFT
 
 Protocol for Non Fungible Token flash loans.
 
 This protocol enables a secure deposit of an `ERC-721` tokens and create a flash loans.
+
+STATUS: Work in progress.
 
 ## Why flash loans?
 
