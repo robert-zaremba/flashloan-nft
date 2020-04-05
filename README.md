@@ -22,6 +22,22 @@ NFTs are more complex. They are not fungible, hence the standard flashloan proto
 More about it in an upcoming blog post on my [blog](http://blog.zaremba.ch).
 
 
+## Specing
+
+This are the decisions to be thought around and spec:
+
++ Fee mechanism: fixed or dynamic or per-user.
++ amount of pools vs dynamic pools
+
++ Consider adding ERC721x Pool
++ add support for ERC-165
+
+
+### Efficiency
+
+For efficient loan browsing we need an off-chain solution. Smart-contracts are too limited and too expensive for that.
+
+
 ## License
 
 Copyright (C) 2020 Robert Zaremba
