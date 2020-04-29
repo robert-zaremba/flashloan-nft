@@ -1,0 +1,28 @@
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Oxygen',
+    'Ubuntu',
+    'Helvetica Neue',
+    'Droid Sans',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, 'Courier New', monospace;
+}
+
+
+.cap-first {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+
+  .ant-select-selection-item::first-letter,
+  .ant-select-item-option-content::first-letter {
+    text-transform: capitalize;
+  }
+}

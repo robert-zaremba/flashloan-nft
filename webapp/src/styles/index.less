@@ -1,0 +1,26 @@
+/* NOTE
+  We can't import 'antd/dist/antd.css'; directly because this will not allow us to do any
+  customization. Also importing antd/dist/antd.less doesn't work because of the webpack problems
+  - the javascriptEnabled option doesn't work (it seams to be deprecated).
+  So, instead we copied the colors.less and theme in this repo. But then we need to regenerate
+  the antd "core" and "components" style in a way they will be aware about our customization:
+    sh antd-generate.sh full # for first clone
+    sh antd-generate.sh # otherwise
+
+  Everything would work much easier if we were able to import less files directly from antd
+  (antd/dist/index.less), but, again - javascript processing doesn't work in less files
+  with current webpack.
+*/
+
+@import './antd_core.css';
+@import './antd_components.css';
+@import './themes/index.less';
+
+/****
+ To customize a theme check description in file ./themes/default.less
+****/
+
+// other imports
+
+@import './layout.less';
+@import './typography.less';
