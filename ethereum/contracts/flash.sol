@@ -25,7 +25,10 @@ contract FlashPool is IERC721Receiver {
     mapping(address => mapping (uint256 => DepositS)) public deposits;
 
     event Deposit(address indexed from, address indexed _contract, uint256 indexed tokenId);
-    event Withdraw(address indexed to, address indexed _contract, uint256 indexed tokenId);
+    event Withdrawww(address indexed to, address indexed _contract, uint256 indexed tokenId);
+
+
+
 
 
     // @notice Depositing token. This function registers a token deposit on the ERC721 token
