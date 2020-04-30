@@ -161,6 +161,10 @@ a:hover {
   text-decoration: none;
   outline: 0;
 }
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
 a[disabled] {
   color: rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
@@ -627,6 +631,7 @@ mark {
 }
 html {
   --antd-wave-shadow-color: #08979c;
+  --scroll-bar: 0;
 }
 [ant-click-animating-without-extra-node='true']::after,
 .ant-click-animating-node {

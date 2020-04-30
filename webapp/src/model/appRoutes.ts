@@ -33,7 +33,7 @@ function mkRoute(r: _Route): Route {
 const routes = {
   dashboard: mkRoute({route: '/view/dashboard'}),
   deposit: mkRoute({ route: '/view/deposit' }),
-  depositNew: mkRoute({ route: '/view/deposit' }),
+  depositNew: mkRoute({ route: '/view/deposit/new' }),
   about: mkRoute({ route: '/view/about' }),
 };
 

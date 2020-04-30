@@ -3,34 +3,42 @@
    Put here only overwrites of variables defined in default.less
 ************************************************************************/
 
-// -------- custom theme colors --------
+// custom theme colors
+@invelinq-base-color: @cyan-7;
+
+// override base colors
+@primary-color: @invelinq-base-color;
+@primary-5: @invelinq-base-color;
+
+// layout customization
+
+@body-background: #f0f2f5;
+@layout-body-background: @body-background;
+@layout-header-background: @body-background;
+
+@content-h-margin: 10px;
+
+@content-background: #fafafa;
+@component-background: #fefefe;
+@layout-sider-background: @content-background; // originally layout-header-background
+@layout-trigger-background: red;
+@layout-trigger-color: gray;
+@layout-header-padding: 0 @content-h-margin;
+@layout-footer-padding: 24px @content-h-margin;
+
+// base
+@text-color: fade(@black, 80%);
 
 
-// -------- override base colors --------
-
-// @primary-color: ...;
-// @primary-5: ...;
-@text-color: fade(@black, 90%);
-
-
-// -------- layout customization --------
-
-// @body-background: ;
-// @layout-body-background: @body-background;
-// @layout-header-background: @body-background;
-
-// @content-h-margin: 10px;
-
-// @content-background: ;
-// @component-background: ;
-// @layout-sider-background: @content-background; // originally layout-header-background
-// @layout-trigger-background: red;
-// @layout-trigger-color: gray;
-// @layout-header-padding: 0 @content-h-margin;
-// @layout-footer-padding: 24px @content-h-margin;
+// Menu
+// ---
+@menu-highlight-color: @invelinq-base-color;
+@menu-inline-toplevel-item-height: 52px; // originally 40px
 
 
-// -------- menu --------
+// general
+@top-element-border-color: @gray-3;
 
+@menu-bg: @content-background;
 
-// -------- general --------
+@grid-border: #f0f0f0;

@@ -1,4 +1,4 @@
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import { DownOutlined, WalletOutlined } from '@ant-design/icons';
 import {
   Dropdown,
   Layout,
@@ -17,8 +17,8 @@ export default function () {
     <Layout.Header className="header">
       <Dropdown overlay={menu} className="user-avatar">
         <span className="ant-dropdown-link">
-          <UserOutlined />
-          &nbsp;User&#160;&nbsp;
+          <WalletOutlined />
+          &nbsp;Wallet&#160;&nbsp;
           <DownOutlined />
         </span>
       </Dropdown>
