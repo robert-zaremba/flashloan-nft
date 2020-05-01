@@ -16,7 +16,7 @@ export default function () {
   return (
     <Layout.Header className="header">
       <Dropdown overlay={menu} className="user-avatar">
-        <span className="ant-dropdown-link">
+        <span className="ant-dropdown-link" style={{width: '100%', textAlign: 'right'}}>
           <WalletOutlined />
           &nbsp;Wallet&#160;&nbsp;
           <DownOutlined />
