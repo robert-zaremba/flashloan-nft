@@ -12,7 +12,7 @@ const props = { router };
 function render(elem: any) {
   ReactDOM.render(
     React.createElement(React.StrictMode, {},
-                        React.createElement(elem, props)),
+      React.createElement(elem, props)),
     document.getElementById('root'),
   );
 }

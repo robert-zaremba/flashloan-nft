@@ -7,9 +7,9 @@ function LayoutFooter() {
   const y = new Date().getFullYear();
   return (
     <Footer>
-Copyright &#169;
+      Copyright &#169;
       {y}
-. All rights reserved.
+      . All rights reserved.
     </Footer>
   );
 }

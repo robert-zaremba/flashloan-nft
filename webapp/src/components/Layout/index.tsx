@@ -2,7 +2,6 @@ import { Layout, PageHeader } from 'antd';
 import React from 'react';
 
 import Footer from './Footer';
-import Header from './Header';
 import Sider from './Sidebar';
 
 function DefaultLayout(props : React.PropsWithChildren<{title: string}>) {
@@ -10,10 +9,15 @@ function DefaultLayout(props : React.PropsWithChildren<{title: string}>) {
     <Layout>
       <Sider key="sider" />
       <Layout key="main">
-        <Header key="header" />
-        <PageHeader key="title" title={props.title} />
+        <Layout.Header key="header">
+          <PageHeader
+            className="site-page-header"
+            title="NFT Flashloans"
+          />
+        </Layout.Header>
         <Layout.Content key="content">
-          { props.children }
+          {props.title}
+          {props.children}
         </Layout.Content>
         <Footer key="footer" />
       </Layout>
