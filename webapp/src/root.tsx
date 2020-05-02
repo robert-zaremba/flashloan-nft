@@ -8,7 +8,7 @@ interface Props {
 }
 
 function Root({ router }: Props) {
-  return router.page
+  return router.page;
 }
 
 // wrap in observable to allow page changes!

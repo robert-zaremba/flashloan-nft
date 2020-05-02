@@ -4,7 +4,7 @@ import { action, observable } from 'mobx';
 import React from 'react';
 import { Router } from 'routes';
 
-import Layout from '../components/Layout/';
+import Layout from '../components/Layout';
 import routes from './appRoutes';
 import AppState from './AppState';
 
@@ -54,7 +54,7 @@ const defaultRoute = {
 const loadableRoutes: Array<LoadableRoute> = [{
   route: routes.about.route,
   getComponent: _getComponent(Layout, 'About',
-    { title: 'About' })
+    { title: 'About' }),
 }];
 // {
 //   route: '/users/?:id?',

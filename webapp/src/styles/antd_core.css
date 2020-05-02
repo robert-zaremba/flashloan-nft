@@ -142,7 +142,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #08979c;
+  color: #003a8c;
   text-decoration: none;
   background-color: transparent;
   outline: none;
@@ -151,13 +151,17 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #08979c;
+  color: #003a8c;
 }
 a:active {
   color: #096dd9;
 }
 a:active,
 a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+a:focus {
   text-decoration: none;
   outline: 0;
 }
@@ -313,7 +317,7 @@ mark {
 }
 ::selection {
   color: #fff;
-  background: #08979c;
+  background: #003a8c;
 }
 .clearfix::before {
   display: table;
@@ -626,7 +630,8 @@ mark {
   position: relative;
 }
 html {
-  --antd-wave-shadow-color: #08979c;
+  --antd-wave-shadow-color: #003a8c;
+  --scroll-bar: 0;
 }
 [ant-click-animating-without-extra-node='true']::after,
 .ant-click-animating-node {
@@ -637,7 +642,7 @@ html {
   left: 0;
   display: block;
   border-radius: inherit;
-  box-shadow: 0 0 0 0 #08979c;
+  box-shadow: 0 0 0 0 #003a8c;
   box-shadow: 0 0 0 0 var(--antd-wave-shadow-color);
   opacity: 0.2;
   animation: fadeEffect 2s cubic-bezier(0.08, 0.82, 0.17, 1), waveEffect 0.4s cubic-bezier(0.08, 0.82, 0.17, 1);
@@ -647,7 +652,7 @@ html {
 }
 @keyframes waveEffect {
   100% {
-    box-shadow: 0 0 0 #08979c;
+    box-shadow: 0 0 0 #003a8c;
     box-shadow: 0 0 0 6px var(--antd-wave-shadow-color);
   }
 }
