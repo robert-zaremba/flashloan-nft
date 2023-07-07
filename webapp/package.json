@@ -27,7 +27,7 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "eslint-plugin-simple-import-sort": "^5.0.2",
     "lint-staged": "^10.0.8",
-    "stylelint": "^13.2.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
